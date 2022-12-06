@@ -1,0 +1,256 @@
+@media (max-width: 1439px) {
+  .sidepanel {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      column-gap: 20px;
+      grid-template-columns: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+      &-item {
+        column-gap: 15px;
+      }
+    }
+  }
+  .resume {
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: repeat(2, 240px);
+      column-gap: 0;
+      justify-content: space-around;
+    }
+  }
+  .mywork {
+    &__wrapper {
+      grid-template-columns: repeat(3, minmax(270px, auto));
+    }
+  }
+  .percent {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(350px, auto));
+    }
+  }
+  .portfolio {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 280px);
+      grid-auto-rows: 280px;
+      justify-content: space-around;
+      row-gap: 35px;
+      .horizontal,
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 400px);
+    }
+    &__form {
+      grid-template-columns: repeat(auto-fit, 45%);
+    }
+    &__btn {
+      height: auto;
+      font-size: 10px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .about {
+    &__wrapper {
+      grid-template-columns: 300px 380px;
+    }
+    &__photo {
+      height: 100%;
+      object-fit: cover;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    &__skills {
+      grid-template-columns: 380px;
+      grid-auto-rows: minmax(115, auto);
+      &-item {
+        grid-template-columns: 40px 320px;
+        column-gap: 20px;
+      }
+    }
+  }
+  .promo {
+    &__title {
+      width: 300px;
+      font-size: 25px;
+    }
+  }
+  .mywork {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(258px, auto));
+    }
+  }
+  .percent {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(330px, auto));
+    }
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 340px);
+      justify-content: space-around;
+      row-gap: 20px;
+    }
+  }
+  .contacts {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 300px);
+      img {
+        object-fit: cover;
+        height: 100%;
+      }
+    }
+    &__btn {
+      padding: 5px;
+    }
+    &__triggers {
+      grid-template-columns: repeat(auto-fit, 50%);
+    }
+    &__policy {
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .resume {
+    &__wrapper {
+      grid-template: 1fr / 1fr;
+      row-gap: 100px;
+      margin-top: 55px;
+    }
+  }
+  .about {
+    &__wrapper {
+      padding-top: 40px;
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__photo {
+      img {
+        grid-row: unset;
+      }
+    }
+    &__skill {
+      &-item {
+        grid-template-columns: 40px 1fr;
+      }
+    }
+    &__skills {
+      grid-template-columns: repeat(2, 260px);
+    }
+  }
+  .percent {
+    &__wrapper {
+      grid-template-columns: repeat(2, minmax(250px, auto));
+    }
+    &__div {
+      width: 200px;
+    }
+  }
+  .contacts {
+    padding-top: 50px;
+    &__wrapper {
+      justify-content: center;
+    }
+    &__photo {
+      display: none;
+    }
+    &__policy {
+      padding-left: 20px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+  .promo {
+    &__buttons {
+      margin-top: 35px;
+    }
+  }
+  .hamburger {
+    right: 20px;
+  }
+  .menu {
+    &__block {
+      width: 250px;
+      padding-left: 55px;
+      padding-top: 120px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+      &__sub {
+        font-size: 12px;
+      }
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+    &__message {
+      font-size: 12px;
+    }
+  }
+  .mywork {
+    &__wrapper {
+      grid-template-columns: repeat(1, minmax(258px, 270px));
+      justify-content: center;
+    }
+  }
+  .percent {
+    &__wrapper {
+      grid-template-columns: repeat(1, minmax(250px, auto));
+    }
+    &__div {
+      width: 100%;
+    }
+  }
+  .price {
+    &__wrapper {
+      grid-template-columns: repeat(auto-fit, 295px);
+    }
+  }
+}

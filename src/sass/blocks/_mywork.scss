@@ -1,0 +1,39 @@
+.mywork {
+  .divider {
+    margin: 25px auto;
+  }
+  padding-top: 126px;
+  &__header {
+    text-align: center;
+
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__subheader {
+    text-align: center;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(270px, auto));
+    grid-template-rows: repeat(2, minmax(270px, auto));
+    grid-column-gap: 13px;
+    grid-row-gap: 13px;
+    grid-auto-rows: 1fr;
+    padding: 0 15px;
+  }
+  &__item {
+    border: 1.5px solid black;
+    padding: 30px;
+    &-sub {
+      padding-top: 15px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-txt {
+      padding-top: 20px;
+    }
+  }
+}
